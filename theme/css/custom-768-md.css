@@ -1,0 +1,84 @@
+/*
+* created : 201806221431
+* author : WRT
+*/
+/* common */
+.ae-body {
+    margin: 30px 20px 60px 20px !important;
+}
+
+.ae-container {
+    width: 85%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* index page */
+.ae-index-pad-exchange-symbol {
+    margin-top: 82px;
+}
+
+.ae-index-pad-col-right {
+    padding-left: 0px !important;
+}
+
+.ae-index-pad-col-left {
+    padding-right: 0px !important;
+}
+
+.ae-index-price-information{
+    display: none;
+}
+
+.ae-index-img-size{
+    width:20%;
+}
+
+.ae-index-social-container{
+    width: 65%;
+    padding-right: 0px;
+}
+
+#ae_index_flotcharts_quantify{
+    height: 150px;
+    margin-top: 0%;
+}
+
+#ae_index_flotcharts_value{
+    height: 150px;
+    margin-top: 0%;
+}
+
+.ae-index-image-size{
+    width: 50%;
+}
+
+/* prepare page */
+.ae-prepare-pad {
+    width: 100%;
+}
+
+#ae_prepare_flotcharts_quantity{
+    margin-top: 0%;
+    height: 150px;
+}
+
+#ae_prepare_flotcharts_value{
+    margin-top: 0%;
+    height: 150px;
+}
+
+/* trade page */
+.ae-trade-pad {
+    width: 100%;
+}
+
+#ae_trade_flotcharts_quantity{
+    height: 150px;
+    margin-top: 0%;
+}
+
+#ae_trade_flotcharts_value{
+    height: 150px;
+    margin-top: 0%;
+}

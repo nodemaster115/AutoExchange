@@ -1,0 +1,109 @@
+/*
+* created : 201806221431
+* author : WRT
+*/
+/* common */
+.ae-body {
+    margin: 60px 5px 0px 5px !important;
+}
+
+.ae-container {
+    width: 75%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* index page */
+.ae-index-pad-exchange-symbol {
+    margin-top: 0px;
+}
+
+.ae-index-image-size{
+    width:20px !important;
+    height: 20px !important;
+}
+.ae-index-exchange-img{
+    padding-top: 20%;
+}
+
+.ae-index-pad-col-left {
+    padding-right: 15px !important;
+}
+
+.ae-index-pad-col-right {
+    padding-left: 15px !important;
+}
+
+.ae-index-left-corner-type{
+    border-radius:5px;
+}
+
+.ae-index-right-corner-type{
+    border-radius:5px;
+}
+
+.ae-index-price-information{
+    display: none;
+}
+
+.ae-index-img-size{
+    width:20%;
+    margin-left: 40%;
+}
+
+.ae-index-social-container{
+    padding-right: 0px;
+}
+
+#ae_index_flotcharts_quantity{
+    height: 150px;
+    margin-top: 0%;
+}
+
+#ae_index_flotcharts_value{
+    height: 150px;
+    margin-top: 0%;
+}
+
+.ae-index-image-size{
+    height: 50% !important;
+    width: 70% !important;
+}
+
+.ae-index-exchange-image-size{
+    height: 100% !important;
+    width: 100% !important;
+}
+
+/* prepare page */
+.ae-prepare-pad {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#ae_prepare_flotcharts_quantity{
+    margin-top: 0%;
+    height: 150px;
+}
+
+#ae_prepare_flotcharts_value{
+    margin-top: 0%;
+    height: 150px;
+}
+
+/* trade page */
+.ae-trade-pad {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#ae_trade_flotcharts_quantity{
+    height: 150px;
+    margin-top: 0%;
+}
+
+#ae_trade_flotcharts_value{
+    height: 150px;
+    margin-top: 0%;
+}

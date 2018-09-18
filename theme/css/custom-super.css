@@ -1,0 +1,38 @@
+/*
+* created : 201806221431
+* author : WRT
+*/
+/* common */
+.ae-body {
+    margin-top: 65px;
+    width: 1340px !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.ae-body-menu-hidden {
+    display: none !important;
+}
+
+/* index page */
+.ae-index-pad-exchange-symbol {
+    margin-top: 82px;
+}
+
+.ae-index-pad-col-right {
+    padding-left: 0px !important;
+}
+
+.ae-index-pad-col-left {
+    padding-right: 0px !important;
+}
+
+/* prepare page */
+.ae-prepare-pad {
+    width: 650px;
+}
+
+/* trade page */
+.ae-trade-pad {
+    width: 680px;
+}

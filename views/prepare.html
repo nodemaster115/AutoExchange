@@ -1,0 +1,1933 @@
+<!DOCTYPE html>
+<html lang="en" >
+<!-- begin::Head -->
+<head>
+    <meta charset="utf-8" />
+    <title>{{=it.translation.site_title}}</title>
+    <meta name="description" content="cryptocurrency exchange site without login or signup">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--begin::Web font -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {"families":["Montserrat:300,400,500,600,700","Roboto:300,400,500,600,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <!--end::Web font -->
+    <!--begin::Base Styles -->
+    <!--begin::Page Vendors -->
+    <link href="/metronic/dist/demo4/assets/vendors/custom/fullcalendar/fullcalendar.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Page Vendors -->
+    <link href="/metronic/dist/demo4/assets/vendors/base/vendors.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="/metronic/dist/demo4/assets/demo/demo4/base/style.bundle.css" rel="stylesheet" type="text/css" />
+    <!--end::Base Styles -->
+
+    <link href="/css/custom.css" rel="stylesheet">
+    <link href="/css/custom-576-sm.css" rel="stylesheet" media="screen and (max-width:576px)">
+    <link href="/css/custom-768-md.css" rel="stylesheet" media="screen and (max-width:768px) and (min-width: 577px)">
+    <link href="/css/custom-992-lg.css" rel="stylesheet" media="screen and (max-width:992px) and (min-width: 769px)">
+    <link href="/css/custom-1200-xl.css" rel="stylesheet" media="screen and (max-width:1200px) and (min-width: 993px)">
+    <link href="/css/custom-1400-xxl.css" rel="stylesheet" media="screen and (max-width:1400px) and (min-width: 1201px)">
+    <link href="/css/custom-super.css" rel="stylesheet" media="screen and (min-width: 1401px)">
+
+    <link rel="shortcut icon" href="/metronic/dist/demo4/assets/demo/demo4/media/img/logo/favicon.ico" />
+</head>
+<!-- end::Head -->
+<!-- begin::Body -->
+<body style="background-image: url('/metronic/dist/demo4/assets/app/media/img/bg/bg-1.jpg'); background-repeat: round;"  class="m-page--boxed m-body--fixed m-header--static m-aside--offcanvas-default"  >
+<!-- begin:: Page -->
+<div class="m-grid m-grid--hor m-grid--root m-page">
+    <!-- begin::Header -->
+    <header class="m-grid__item	m-grid m-grid--desktop m-grid--hor-desktop  m-header " >
+        <div class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--hor-desktop m-container m-container--responsive m-container--xxl">
+            <div class="ae-header-container">
+                <div class="row">
+                    <div class="col-12">
+                        <!---------social icons--------->
+                        <div class="ae-index-social-icons">
+                            <div class="row">
+                                <div class="col-6 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8"></div>
+                                <div class="col-6 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="ae-index-social-container">
+                                        <div class="row">
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                                <a id="twitter" href="https://twitter.com/ShapeShift_io" target="_blank">
+                                                    <img class="ss-contact-twitter" src="/img/coins/twitter.png">
+                                                </a>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                                <a id="facebook" href="https://www.facebook.com/pages/ShapeShiftio/733091776768255?ref=hl" target="_blank">
+                                                    <img class="ss-contact-facebook" src="/img/coins/fackbook.png">
+                                                </a>
+                                            </div>
+                                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                                <a id="slack" href="https://shapeshiftcommunity.herokuapp.com/" target="_blank">
+                                                    <img class="social-slack" src="/img/coins/slack.png">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-grid__item m-grid__item--fluid m-grid m-grid--desktop m-grid--ver-desktop m-header__wrapper">
+                <!-- begin::Brand -->
+                <div class="m-grid__item m-brand">
+                    <div class="m-stack m-stack--ver m-stack--general m-stack--inline">
+                        <div class="m-stack__item m-stack__item--middle m-brand__logo">
+                            <a href="index.html" class="m-brand__logo-wrapper">
+                                <img alt="" src="/metronic/dist/demo4/assets/demo/demo4/media/img/logo/logo.png"/>
+                            </a>
+                        </div>
+                        <span class="m-stack__item m-stack__item--middle ae-logo-title">AnonExchange</span>
+                        <div class="m-stack__item m-stack__item--middle m-brand__tools">
+                            <!-- begin::Responsive Header Menu Toggler-->
+                            <a id="m_aside_header_menu_mobile_toggle" href="javascript:;" class="m-brand__icon m-brand__toggler m--visible-tablet-and-mobile-inline-block">
+                                <span></span>
+                            </a>
+                            <!-- end::Responsive Header Menu Toggler-->
+                        </div>
+                    </div>
+                </div>
+                <!-- end::Brand -->                                        					<!-- begin::Topbar -->
+                <div class="m-grid__item m-grid__item--fluid m-header-head" id="m_header_nav">
+                    <div id="m_header_topbar" class="m-topbar  m-stack m-stack--ver m-stack--general">
+                        <div class="m-stack__item m-topbar__nav-wrapper">
+                            <ul class="m-topbar__nav m-nav m-nav--inline">
+                                <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+                                    <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <span class="m-nav__link-icon">
+                                            <span class="m-nav__link-icon-wrapper ae-nav-menu-main">
+                                                About
+                                            </span>
+										</span>
+                                    </a>
+                                    <div class="m-dropdown__wrapper">
+                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                        <div class="m-dropdown__inner">
+                                            <div class="m-dropdown__header m--align-center" style="background: url(/metronic/dist/demo4/assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
+                                                <span class="m-dropdown__header-title">
+                                                    Quick Actions
+                                                </span>
+                                                <span class="m-dropdown__header-subtitle">
+													Shortcuts
+												</span>
+                                            </div>
+                                            <div class="m-dropdown__body m-dropdown__body--paddingless">
+                                                <div class="m-dropdown__content">
+                                                    <div class="m-scrollable" data-scrollable="false" data-max-height="380" data-mobile-max-height="200">
+                                                        <div class="m-nav-grid m-nav-grid--skin-light">
+                                                            <div class="m-nav-grid__row">
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-file"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Generate Report
+																			</span>
+                                                                </a>
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-time"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Add New Event
+																			</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+                                    <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <span class="m-nav__link-icon">
+                                            <span class="m-nav__link-icon-wrapper ae-nav-menu-main">
+                                                API + Tools
+                                            </span>
+										</span>
+                                    </a>
+                                    <div class="m-dropdown__wrapper">
+                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                        <div class="m-dropdown__inner">
+                                            <div class="m-dropdown__header m--align-center" style="background: url(/metronic/dist/demo4/assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
+                                                <span class="m-dropdown__header-title">
+                                                    Quick Actions
+                                                </span>
+                                                <span class="m-dropdown__header-subtitle">
+													Shortcuts
+												</span>
+                                            </div>
+                                            <div class="m-dropdown__body m-dropdown__body--paddingless">
+                                                <div class="m-dropdown__content">
+                                                    <div class="m-scrollable" data-scrollable="false" data-max-height="380" data-mobile-max-height="200">
+                                                        <div class="m-nav-grid m-nav-grid--skin-light">
+                                                            <div class="m-nav-grid__row">
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-file"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Generate Report
+																			</span>
+                                                                </a>
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-time"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Add New Event
+																			</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+                                    <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <span class="m-nav__link-icon">
+                                            <span class="m-nav__link-icon-wrapper ae-nav-menu-main">
+                                                Resources
+                                            </span>
+										</span>
+                                    </a>
+                                    <div class="m-dropdown__wrapper">
+                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                        <div class="m-dropdown__inner">
+                                            <div class="m-dropdown__header m--align-center" style="background: url(/metronic/dist/demo4/assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
+                                                <span class="m-dropdown__header-title">
+                                                    Quick Actions
+                                                </span>
+                                                <span class="m-dropdown__header-subtitle">
+													Shortcuts
+												</span>
+                                            </div>
+                                            <div class="m-dropdown__body m-dropdown__body--paddingless">
+                                                <div class="m-dropdown__content">
+                                                    <div class="m-scrollable" data-scrollable="false" data-max-height="380" data-mobile-max-height="200">
+                                                        <div class="m-nav-grid m-nav-grid--skin-light">
+                                                            <div class="m-nav-grid__row">
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-file"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Generate Report
+																			</span>
+                                                                </a>
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-time"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Add New Event
+																			</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-nav__item m-topbar__quick-actions m-topbar__quick-actions--img m-dropdown m-dropdown--large m-dropdown--header-bg-fill m-dropdown--arrow m-dropdown--align-right m-dropdown--align-push m-dropdown--mobile-full-width m-dropdown--skin-light"  data-dropdown-toggle="click">
+                                    <a href="#" class="m-nav__link m-dropdown__toggle">
+                                        <span class="m-nav__link-icon">
+                                            <span class="m-nav__link-icon-wrapper ae-nav-menu-main">
+                                                Support
+                                            </span>
+										</span>
+                                    </a>
+                                    <div class="m-dropdown__wrapper">
+                                        <span class="m-dropdown__arrow m-dropdown__arrow--right m-dropdown__arrow--adjust"></span>
+                                        <div class="m-dropdown__inner">
+                                            <div class="m-dropdown__header m--align-center" style="background: url(/metronic/dist/demo4/assets/app/media/img/misc/quick_actions_bg.jpg); background-size: cover;">
+                                                <span class="m-dropdown__header-title">
+                                                    Quick Actions
+                                                </span>
+                                                <span class="m-dropdown__header-subtitle">
+													Shortcuts
+												</span>
+                                            </div>
+                                            <div class="m-dropdown__body m-dropdown__body--paddingless">
+                                                <div class="m-dropdown__content">
+                                                    <div class="m-scrollable" data-scrollable="false" data-max-height="380" data-mobile-max-height="200">
+                                                        <div class="m-nav-grid m-nav-grid--skin-light">
+                                                            <div class="m-nav-grid__row">
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-file"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Generate Report
+																			</span>
+                                                                </a>
+                                                                <a href="#" class="m-nav-grid__item">
+                                                                    <i class="m-nav-grid__icon flaticon-time"></i>
+                                                                    <span class="m-nav-grid__text">
+																				Add New Event
+																			</span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end::Topbar -->
+            </div>
+        </div>
+    </header>
+    <!-- end::Header -->
+    <!-- begin::Body -->
+    <div class="m-grid__item m-grid__item--fluid m-grid m-grid m-grid--hor m-container m-container--responsive m-container--xxl ae-body-menu-hidden">
+        <div class="m-grid__item m-grid__item--fluid m-grid m-grid--hor-desktop m-grid--desktop m-body">
+            <div class="m-grid__item m-body__nav">
+                <div class="m-stack m-stack--ver m-stack--desktop">
+                    <!-- begin::Horizontal Menu -->
+                    <div class="m-stack__item m-stack__item--middle m-stack__item--fluid">
+                        <button class="m-aside-header-menu-mobile-close  m-aside-header-menu-mobile-close--skin-light " id="m_aside_header_menu_mobile_close_btn">
+                            <i class="la la-close"></i>
+                        </button>
+                        <div id="m_header_menu" class="m-header-menu m-aside-header-menu-mobile m-aside-header-menu-mobile--offcanvas  m-header-menu--skin-light m-header-menu--submenu-skin-light m-aside-header-menu-mobile--skin-light m-aside-header-menu-mobile--submenu-skin-light "  >
+                            <ul class="m-menu__nav  m-menu__nav--submenu-arrow ">
+                                <li class="m-menu__item  m-menu__item--active "  aria-haspopup="true">
+                                    <a  href="index.html" class="m-menu__link ">
+                                        <span class="m-menu__item-here"></span>
+                                        <span class="m-menu__link-text">
+													Dashboard
+												</span>
+                                    </a>
+                                </li>
+                                <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" aria-haspopup="true">
+                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                        <span class="m-menu__item-here"></span>
+                                        <span class="m-menu__link-text">
+													Actions
+												</span>
+                                        <i class="m-menu__hor-arrow la la-angle-down"></i>
+                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                    </a>
+                                    <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
+                                        <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item "  aria-haspopup="true">
+                                                <a  href="inner.html" class="m-menu__link ">
+                                                    <i class="m-menu__link-icon flaticon-diagram"></i>
+                                                    <span class="m-menu__link-title">
+																<span class="m-menu__link-wrap">
+																	<span class="m-menu__link-text">
+																		Generate Reports
+																	</span>
+																	<span class="m-menu__link-badge">
+																		<span class="m-badge m-badge--success">
+																			2
+																		</span>
+																	</span>
+																</span>
+															</span>
+                                                </a>
+                                            </li>
+                                            <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                                    <i class="m-menu__link-icon flaticon-business"></i>
+                                                    <span class="m-menu__link-text">
+																Manage Orders
+															</span>
+                                                    <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                </a>
+                                                <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
+                                                    <span class="m-menu__arrow "></span>
+                                                    <ul class="m-menu__subnav">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Latest Orders
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Pending Orders
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Processed Orders
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Delivery Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Payments
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Customers
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                                    <i class="m-menu__link-icon flaticon-chat-1"></i>
+                                                    <span class="m-menu__link-text">
+																Customer Feedbacks
+															</span>
+                                                    <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                </a>
+                                                <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
+                                                    <span class="m-menu__arrow "></span>
+                                                    <ul class="m-menu__subnav">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Customer Feedbacks
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Supplier Feedbacks
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Reviewed Feedbacks
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Resolved Feedbacks
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Feedback Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                <a  href="inner.html" class="m-menu__link ">
+                                                    <i class="m-menu__link-icon flaticon-users"></i>
+                                                    <span class="m-menu__link-text">
+																Register Member
+															</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                        <span class="m-menu__item-here"></span>
+                                        <span class="m-menu__link-text">
+													Reports
+												</span>
+                                        <i class="m-menu__hor-arrow la la-angle-down"></i>
+                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                    </a>
+                                    <div class="m-menu__submenu  m-menu__submenu--fixed m-menu__submenu--left" style="width:600px">
+                                        <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                        <div class="m-menu__subnav">
+                                            <ul class="m-menu__content">
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	Finance Reports
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-map"></i>
+                                                                <span class="m-menu__link-text">
+																			Annual Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-user"></i>
+                                                                <span class="m-menu__link-text">
+																			HR Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-clipboard"></i>
+                                                                <span class="m-menu__link-text">
+																			IPO Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic-1"></i>
+                                                                <span class="m-menu__link-text">
+																			Finance Margins
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic-2"></i>
+                                                                <span class="m-menu__link-text">
+																			Revenue Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	Project Reports
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Coca Cola CRM
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Delta Airlines Booking Site
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Malibu Accounting
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Vineseed Website Rewamp
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Zircon Mobile App
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Mercury CMS
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                        <span class="m-menu__item-here"></span>
+                                        <span class="m-menu__link-text">
+													Orders
+												</span>
+                                        <i class="m-menu__hor-arrow la la-angle-down"></i>
+                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                    </a>
+                                    <div class="m-menu__submenu  m-menu__submenu--fixed-xl m-menu__submenu--center" >
+                                        <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                        <div class="m-menu__subnav">
+                                            <ul class="m-menu__content">
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	Finance Reports
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-map"></i>
+                                                                <span class="m-menu__link-text">
+																			Annual Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-user"></i>
+                                                                <span class="m-menu__link-text">
+																			HR Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-clipboard"></i>
+                                                                <span class="m-menu__link-text">
+																			IPO Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic-1"></i>
+                                                                <span class="m-menu__link-text">
+																			Finance Margins
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic-2"></i>
+                                                                <span class="m-menu__link-text">
+																			Revenue Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	Project Reports
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Coca Cola CRM
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Delta Airlines Booking Site
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Malibu Accounting
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Vineseed Website Rewamp
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Zircon Mobile App
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--line">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Mercury CMS
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	HR Reports
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Staff Directory
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Client Directory
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Salary Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Staff Payslips
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Corporate Expenses
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                                                                    <span></span>
+                                                                </i>
+                                                                <span class="m-menu__link-text">
+																			Project Expenses
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="m-menu__item">
+                                                    <h3 class="m-menu__heading m-menu__toggle">
+																<span class="m-menu__link-text">
+																	Reporting Apps
+																</span>
+                                                        <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                    </h3>
+                                                    <ul class="m-menu__inner">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Report Adjusments
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Sources & Mediums
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Reporting Settings
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Conversions
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Report Flows
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+																		<span class="m-menu__link-text">
+																			Audit & Logs
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-menu__item  m-menu__item--submenu m-menu__item--rel m-menu__item--more m-menu__item--icon-only"  data-menu-submenu-toggle="click" data-redirect="true" aria-haspopup="true">
+                                    <a  href="#" class="m-menu__link m-menu__toggle">
+                                        <span class="m-menu__item-here"></span>
+                                        <i class="m-menu__link-icon flaticon-more-v3"></i>
+                                        <span class="m-menu__link-text"></span>
+                                    </a>
+                                    <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left m-menu__submenu--pull">
+                                        <span class="m-menu__arrow m-menu__arrow--adjust"></span>
+                                        <ul class="m-menu__subnav">
+                                            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                <a  href="inner.html" class="m-menu__link ">
+                                                    <i class="m-menu__link-icon flaticon-business"></i>
+                                                    <span class="m-menu__link-text">
+																eCommerce
+															</span>
+                                                </a>
+                                            </li>
+                                            <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                                                <a  href="crud/datatable_v1.html" class="m-menu__link m-menu__toggle">
+                                                    <i class="m-menu__link-icon flaticon-computer"></i>
+                                                    <span class="m-menu__link-text">
+																Audience
+															</span>
+                                                    <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                </a>
+                                                <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--right">
+                                                    <span class="m-menu__arrow "></span>
+                                                    <ul class="m-menu__subnav">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-users"></i>
+                                                                <span class="m-menu__link-text">
+																			Active Users
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-interface-1"></i>
+                                                                <span class="m-menu__link-text">
+																			User Explorer
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-lifebuoy"></i>
+                                                                <span class="m-menu__link-text">
+																			Users Flows
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic-1"></i>
+                                                                <span class="m-menu__link-text">
+																			Market Segments
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-graphic"></i>
+                                                                <span class="m-menu__link-text">
+																			User Reports
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                <a  href="inner.html" class="m-menu__link ">
+                                                    <i class="m-menu__link-icon flaticon-map"></i>
+                                                    <span class="m-menu__link-text">
+																Marketing
+															</span>
+                                                </a>
+                                            </li>
+                                            <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                <a  href="inner.html" class="m-menu__link ">
+                                                    <i class="m-menu__link-icon flaticon-graphic-2"></i>
+                                                    <span class="m-menu__link-title">
+																<span class="m-menu__link-wrap">
+																	<span class="m-menu__link-text">
+																		Campaigns
+																	</span>
+																	<span class="m-menu__link-badge">
+																		<span class="m-badge m-badge--success">
+																			3
+																		</span>
+																	</span>
+																</span>
+															</span>
+                                                </a>
+                                            </li>
+                                            <li class="m-menu__item  m-menu__item--submenu"  data-menu-submenu-toggle="hover" data-redirect="true" aria-haspopup="true">
+                                                <a  href="#" class="m-menu__link m-menu__toggle">
+                                                    <i class="m-menu__link-icon flaticon-infinity"></i>
+                                                    <span class="m-menu__link-text">
+																Cloud Manager
+															</span>
+                                                    <i class="m-menu__hor-arrow la la-angle-right"></i>
+                                                    <i class="m-menu__ver-arrow la la-angle-right"></i>
+                                                </a>
+                                                <div class="m-menu__submenu m-menu__submenu--classic m-menu__submenu--left">
+                                                    <span class="m-menu__arrow "></span>
+                                                    <ul class="m-menu__subnav">
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-add"></i>
+                                                                <span class="m-menu__link-title">
+																			<span class="m-menu__link-wrap">
+																				<span class="m-menu__link-text">
+																					File Upload
+																				</span>
+																				<span class="m-menu__link-badge">
+																					<span class="m-badge m-badge--danger">
+																						3
+																					</span>
+																				</span>
+																			</span>
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-signs-1"></i>
+                                                                <span class="m-menu__link-text">
+																			File Attributes
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-folder"></i>
+                                                                <span class="m-menu__link-text">
+																			Folders
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="m-menu__item "  data-redirect="true" aria-haspopup="true">
+                                                            <a  href="inner.html" class="m-menu__link ">
+                                                                <i class="m-menu__link-icon flaticon-cogwheel-2"></i>
+                                                                <span class="m-menu__link-text">
+																			System Settings
+																		</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end::Horizontal Menu -->
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- end::Body -->
+
+    <div class="ae-body">
+        <!-- ad sentence & trading pad -->
+        <div class="row ae-body p-b-50 m-t-0">
+            <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-3 col-xxl-3"></div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-6 col-xxl-6">
+                <div class="ae-prepare-pad">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                            <!-- rate information -->
+                            <div class="ae-prepare-pad-rate-info">
+                                <div class="ae-prepare-pad-instant-rate">
+                                    <a class="btn ae-prepare-pad-back-btn">
+                                        <span class="fa fa-chevron-left" id="id_btnBack"></span>
+                                    </a>
+                                    <span class="ae-prepare-pad-instant-rate-title">Instant Rate</span><span id="id_rateString">{{=it.prepare.rateString}}</span>
+                                </div>
+
+                                <!-- min & max & fee status-->
+                                <div class="row">
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                        <div class="ae-prepare-pad-mmf-wrapper">
+                                            <div class="ae-prepare-pad-mmf-title">
+                                                Deposit Min
+                                            </div>
+                                            <div class="ae-prepare-pad-mmf-value" id="id_minString">
+                                                {{=it.prepare.minString}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                        <div class="ae-prepare-pad-mmf-wrapper ae-prepare-pad-mmf-spliter">
+                                            <div class="ae-prepare-pad-mmf-title">
+                                                Deposit Max
+                                            </div>
+                                            <div class="ae-prepare-pad-mmf-value" id="id_maxString">
+                                                {{=it.prepare.maxString}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                        <div class="ae-prepare-pad-mmf-wrapper">
+                                            <div class="ae-prepare-pad-mmf-title">
+                                                Miner Fee
+                                            </div>
+                                            <div class="ae-prepare-pad-mmf-value" id="id_feeString">
+                                                {{=it.prepare.feeString}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- select coins for deposit and receive -->
+                    <div class="row">
+                        <div class="ae-prepare-pad-container">
+
+                            {{?it.prepare.tradingType == 'quick'}}
+                            <!-- coins -->
+                            <div class="row" style="margin-bottom: 30px;">
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                    <div class="row">
+                                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5" style="padding: 0px !important;">
+                                            <a data-toggle="modal" id="id_selectDeposit" data-target="#id_modalSelectCoin">
+                                                <img src="/img/coins/btc.png" class="ae-prepare-pad-coin-img" id="id_imgDepositCoin">
+                                            </a>
+                                        </div>
+                                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2" style="padding: 0px !important;">
+                                            <a id="id_selectExchange">
+                                                <img src="/img/pre_ex.png" class="ae-prepare-pad-exchange-symbol">
+                                            </a>
+                                        </div>
+                                        <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5" style="padding: 0px !important;">
+                                            <a data-toggle="modal" id="id_selectReceive" data-target="#id_modalSelectCoin">
+                                                <img src="/img/coins/eth.png" class="ae-prepare-pad-coin-img" id="id_imgReceiveCoin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4"></div>
+                            </div>
+                            {{??}}
+                            <!-- coins -->
+                            <div class="row" style="margin-bottom: 30px;">
+                                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                    <a data-toggle="modal" id="id_selectDeposit" data-target="#id_modalSelectCoin">
+                                        <img src="/img/coins/btc.png" class="ae-prepare-pad-coin-img" id="id_imgDepositCoin">
+                                    </a>
+
+                                    <div class="m-form m-form--state" style="margin-top: 15px;">
+                                        <div class="form-group m-form__group has-success">
+                                            <input type="text" id="id_depositAmount" class="form-control form-control-success m-input ae-prepare-pad-input" placeholder="Deposit Amount">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                                    <a id="id_selectExchange">
+                                        <img src="/img/pre_ex.png" class="ae-prepare-pad-exchange-symbol">
+                                    </a>
+                                </div>
+                                <div class="col-5 col-sm-5 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                                    <a data-toggle="modal" id="id_selectReceive" data-target="#id_modalSelectCoin">
+                                        <img src="/img/coins/eth.png" class="ae-prepare-pad-coin-img" id="id_imgReceiveCoin">
+                                    </a>
+
+                                    <div class="m-form m-form--state" style="margin-top: 15px;">
+                                        <div class="form-group m-form__group has-success">
+                                            <input type="text" id="id_receiveAmount" class="form-control form-control-success m-input ae-prepare-pad-input" placeholder="Receive Amount">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{?}}
+
+                            <!-- deposit address -->
+                            <div class="row" style="margin-bottom: 30px;">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <div class="m-form m-form--state">
+                                        <div class="form-group m-form__group has-success">
+                                            <input type="text" id="id_destAddress" class="form-control form-control-success m-input ae-prepare-pad-input" placeholder="Your Ether Address (destination address)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- refund address -->
+                            <div class="row" style="margin-bottom: 40px;">
+                                <div class="col-md-12">
+                                    <div class="m-form m-form--state">
+                                        <div class="form-group m-form__group has-success">
+                                            <input type="text" id="id_refundAddress" class="form-control form-control-success m-input ae-prepare-pad-input" placeholder="Your Bitcoin Refund Address">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="margin-bottom: 30px;">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <div class="m-form m-form--state">
+                                        <div class="form-group m-form__group has-success">
+
+                                            <label id="id_chkAgree" class="m-checkbox m-checkbox--square" style="float: left;text-align: left;">
+                                                <input type="checkbox">
+                                                    I agree to the Terms and certify that I am the beneflcial owner of the input assets and the destination address.
+                                                <span></span>
+                                            </label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- start_transaction button -->
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                                    <button id="id_btnStartTransaction" type="button" class="btn btn-lg btn-full ae-index-btn-start-transaction">Start Transaction</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-3 col-xxl-3"></div>
+        </div>
+
+        <!-- prices information -->
+        <div class="ae-index-price-information">
+            <div class="ae-container">
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-status">
+                        <a href="" target="_blank">
+                            <div class="status color-background-green m-l-10" id="btc_status"></div>
+                            <strong class="ae-index-price-title strong-weight-700 color-white" id="btc_title">BTC</strong>
+                            <br>
+                            <span class="ae-index-price-value color-white">$</span><span class="ae-index-price-value color-white" id="btc_value"></span>
+                            <BR>
+                            <span class="ae-index-percent color-red" id="btc_percent"></span><span class="ae-index-percent color-red">%</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-status">
+                        <a href="" target="_blank">
+                            <div class="status color-background-green m-l-10" id="eth_status"></div>
+                            <strong class="ae-index-price-title strong-weight-700 color-white" id="eth_title">ETH</strong>
+                            <br>
+                            <span class="ae-index-price-value color-white">$</span><span class="ae-index-price-value color-white" id="eth_value"></span>
+                            <br>
+                            <span class="ae-index-percent color-red" id="eth_percent"></span><span class="ae-index-percent color-red">%</span>
+                        </a>
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-status">
+                        <a href="" target="_blank">
+                            <div class="status color-background-green m-l-10" id="qrl_status"></div>
+                            <strong class="ae-index-price-title strong-weight-700 color-white" id="qrl_title">QRL</strong>
+                            <br>
+                            <span class="ae-index-price-value color-white">$</span><span class="ae-index-price-value color-white" id="qrl_value"></span>
+                            <br>
+                            <span class="ae-index-percent color-red" id="qrl_percent"></span><span class="ae-index-percent color-red">%</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Guide Description -->
+    <div class="ae-index-guide-description">
+        <div class="ae-container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction">
+                    <div class="row">
+
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction">
+                            <img class="ae-index-img-size" src="/img/coins/123.png">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ae-index-div-recent-transaction color-white">
+                            <h4 class = "color-blue">EASY</h4>
+                            <p>
+                                Choose the altcoins or blockchain tokens you would like to exchange, input your receiving address, & send your funds. Fast crypto market exchanges, no fees, and a delightful process.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction color-white">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction">
+                            <img class="ae-index-img-size" src="/img/coins/firewall.png">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ae-index-div-recent-transaction">
+                            <h4 class = "color-blue">
+                                SAFE
+                            </h4>
+                            <p>
+                                Unlike other digital asset and bitcoin exchanges, you don’t need an account to use ShapeShift. This means your funds and information don’t suffer custodial risk.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction color-white">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 col-xxl-4 ae-index-div-recent-transaction">
+                            <img class="ae-index-img-size" src="/img/coins/medal.png">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 ae-index-div-recent-transaction">
+                            <h4 class = "color-blue">
+                                COMPETITIVE
+                            </h4>
+                            <p>
+                                We offer competitive altcoin and btc exchange rates that update in real time, with no fees on top. Our liquidity and expertise in cryptocurrency trading continually improve.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Transaction -->
+    <div class="ae-index-recent-transactions">
+        <div class="ae-container">
+            <div class="row">
+                <div class="ae-index-Recent-Transaction-title col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h3 class="gray-band ae-index-recent-transaction-title">
+                        Recent Transactions
+                    </h3>
+                </div>
+                <div class="ae-index-Recent-Transaction-body col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ae-index-recent-transaction-list">
+                            <h4 class="tx-center color-gray">
+                                BTC
+                                <span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
+                                ETH
+                            </h4>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/eth.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/eth.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/eth.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/eth.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ae-index-recent-transaction-list">
+                            <h4 class="tx-center color-gray">
+                                BTC
+                                <span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
+                                QRL
+                            </h4>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/btc.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>                                             <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">BTC</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 ae-index-recent-transaction-list">
+                            <h4 class="tx-center color-gray">
+                                ETH
+                                <span>
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
+                                QRL
+                            </h4>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/eth.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>
+                                            <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/eth.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>
+                                            <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/eth.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>
+                                            <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row color-gray">
+                                <div class="col-md-12 ae-index-recent-transaction-unit-list">
+                                    <span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <img src="/img/coins/eth.png" id="img_fcoin" class="w-10">
+                                        </a>
+                                        <span>
+                                            <i class="fa fa-arrow-right"></i>
+                                        </span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <img src="/img/coins/qrl.png" class="w-10" id="img_tcoin">
+                                        </a>
+                                        <span id="val_fcoin">0.005</span>
+                                        <a href="" target="_blank" id="a_fcoin">
+                                            <span class="color-gray">ETH</span>
+                                        </a>
+                                        <span>To</span>
+                                        <a href="" target="_blank" id="a_tcoin">
+                                            <span class="color-gray">QRL</span>
+                                        </a>
+                                    </span>
+                                    <p class="ae-index-recent-transaction-p">
+                                        <span id="tx-time">5</span>
+                                        <span>mins ago</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Statics-->
+    <div class="ae-index-statics">
+        <div class="ae-container">
+            <div class="row">
+                <div class="ae-index-statics-title col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <h3 class="gray-band ae-index-statics-title">
+                        24 Hour Statistics
+                    </h3>
+                </div>
+                <div class="ae-index-statics-body col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <div class="row">
+                        <div class="ae-index-statics-list col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div id="ae_prepare_flotcharts_quantity"></div>
+                            <div class="tx-center">
+                                <span>By Order Quantity</span>
+                            </div>
+                        </div>
+                        <div class="ae-index-statics-list col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ae-index-panel">
+                                    <div class="ae-index-panel-block">
+                                        <div class="ae-index-panel-heading">
+                                            <span>Transactions</span>
+                                        </div>
+                                        <div class="ae-index-panel-body">
+                                            <span id="static_value">6,008</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ae-index-panel">
+                                    <div class="ae-index-panel-block">
+                                        <div class="ae-index-panel-heading">
+                                            <span>Most Popular Trade</span>
+                                        </div>
+                                        <div class="ae-index-panel-body">
+                                            <a href="" id="a_pp_trade-fcoin">
+                                                <img src="/img/coins/btc.png" class="w-10" id="img_pp_trade_fcoin">
+                                            </a>
+                                            <span><i class="fa fa-arrow-right"></i></span>
+                                            <a href="" id="pp_trade-tcoin">
+                                                <img src="/img/coins/qrl.png" class="w-10" id="img_pp_trade_tcoin">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ae-index-panel">
+                                    <div class="ae-index-panel-block">
+                                        <div class="ae-index-panel-heading">
+                                            <span>Average Processing Time</span>
+                                        </div>
+                                        <div class="ae-index-panel-body">
+                                            <span id="txtime">1146</span><span>seconds</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-1 col-lg-1 col-xl-1 col-xxl-1"></div>
+                                <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ae-index-panel">
+                                    <div class="ae-index-panel-block">
+                                        <div class="ae-index-panel-heading">
+                                            <span>Bitcoin Volume Equivalent</span>
+                                        </div>
+                                        <div class="ae-index-panel-body">
+                                            <span id="btc_amount">583.056</span><span>BTC</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ae-index-statics-list col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+                            <div id="ae_prepare_flotcharts_value"></div>
+                            <div class="tx-center">
+                                <span>By Value</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email-->
+    <div class="ae-index-email">
+        <div class="ae-container">
+            <div class="row">
+                <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="input-group">
+                        <input name='EMAIL' class="form-control ae-index-email-input" id="email" type="email" placeholder="Enter Email to Receive Updates About AnonExchange">
+                        <span class="input-group-btn">
+                            <input name="subscribe" class="btn btn-success" type="submit" id="btn_email" value="Subscribe">
+                        </span>
+                    </div>
+                    <div class="col-2 col-sm-8 col-md-2 col-lg-2 col-xl-2 col-xxl-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- select coin - modal dialog -->
+    <div class="modal fade" id="id_modalSelectCoin" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="">
+                        <div class="ae-sel-modal-coin-title">
+                            Search by asset name or symbol
+                        </div>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="la la-remove"></span>
+                    </button>
+                </div>
+                <form class="m-form m-form--fit m-form--label-align-right">
+                    <div class="modal-body">
+                        <div class="row">
+                            <!-- btc -->
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="ae-sel-modal-wrapper">
+                                    <div class="ae-sel-modal-coin-short-name">BTC</div>
+                                    <div class="ae-sel-modal-coin-full-name">Bitcoin</div>
+                                    <img src="/img/coins/btc.png">
+                                    <div class="ae-sel-modal-coin-name">
+                                        Bitcoin
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- eth -->
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="ae-sel-modal-wrapper">
+                                    <div class="ae-sel-modal-coin-short-name">ETH</div>
+                                    <div class="ae-sel-modal-coin-full-name">Ethereum</div>
+                                    <img src="/img/coins/eth.png">
+                                    <div class="ae-sel-modal-coin-name">
+                                        Ethereum
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- qrl -->
+                            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 col-xxl-4">
+                                <div class="ae-sel-modal-wrapper">
+                                    <div class="ae-sel-modal-coin-short-name">QRL</div>
+                                    <div class="ae-sel-modal-coin-full-name">Quantum Coin</div>
+                                    <img src="/img/coins/qrl.png">
+                                    <div class="ae-sel-modal-coin-name">
+                                        QRL
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button id="id_btnCloseModal" type="button" class="btn btn-brand m-btn" data-dismiss="modal" style="display: none;"></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- post data -->
+
+    <form id="id_formPost" action="/trade" method="POST" style="display: none;">
+        <input id="id_postDepositCoinShortName" name="depositShortName" value="{{=it.prepare.depositShortName}}">
+        <input id="id_postDepositCoinFullName" name="depositFullName" value="{{=it.prepare.depositFullName}}">
+        <input id="id_postReceiveCoinShortName" name="receiveShortName" value="{{=it.prepare.receiveShortName}}">
+        <input id="id_postReceiveCoinFullName" name="receiveFullName" value="{{=it.prepare.receiveFullName}}">
+        <input id="id_postTradingType" name="tradingType" value="{{=it.prepare.tradingType}}">
+        <input id="id_postDestAddress" name="destAddress" value="">
+        <input id="id_postRefundAddress" name="refundAddress" value="">
+        <input id="id_postDepositAmount" name="depositAmount" value="">
+        <input id="id_postReceiveAmount" name="receiveAmount" value="">
+    </form>
+
+    <!-- begin::Footer -->
+    <footer class="m-grid__item	m-footer ">
+        <div class="ae-container">
+            <div class="row service-footer color-white">
+                <div class="col-12 col-sm-1 col-md-2 col-lg-2 col-xl-2 col-xxl-2">
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 tx-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                            <h4 class="tx-left">API + Tools</h4>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_api">
+                                    <span class="color-transparent-white">API</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_lens_extension">
+                                    <span class="color-transparent-white">Lens Extension</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_anonexchange_button">
+                                    <span class="color-transparent-white">AnonExchange Button</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 tx-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                            <h4 class="tx-left">Resources</h4>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_company_information">
+                                    <span class="color-transparent-white">Company Information</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_bussiness">
+                                    <span class="color-transparent-white">For Business</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_affiliates">
+                                    <span class="color-transparent-white">Affiliates</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_press">
+                                    <span class="color-transparent-white">Press</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_testimonials">
+                                    <span class="color-transparent-white">Testmonials</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_blog">
+                                    <span class="color-transparent-white">Blog</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_videos">
+                                    <span class="color-transparent-white">Videos</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3 tx-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3"></div>
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+                            <h4 class="tx-left">Support</h4>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_contact_us">
+                                    <span class="color-transparent-white">Contact US</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_faq">
+                                    <span class="color-transparent-white">FAQ</span>
+                                </a>
+                            </div>
+                            <div class="tx-left">
+                                <a href="" target="_blank" id="service_terms_conditions">
+                                    <span class="color-transparent-white">Terms and Conditions</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- end:: Page -->
+<!-- begin::Scroll Top -->
+<div class="m-scroll-top m-scroll-top--skin-top" data-toggle="m-scroll-top" data-scroll-offset="500" data-scroll-speed="300">
+    <i class="la la-arrow-up"></i>
+</div>
+<!-- end::Scroll Top -->
+<!--begin::Base Scripts -->
+<script src="/metronic/dist/demo4/assets/vendors/base/vendors.bundle.js" type="text/javascript"></script>
+<script src="/metronic/dist/demo4/assets/demo/demo4/base/scripts.bundle.js" type="text/javascript"></script>
+<!--end::Base Scripts -->
+<!--begin::Page Snippets -->
+<script src="/metronic/dist/demo4/assets/app/js/dashboard.js" type="text/javascript"></script>
+<script src="/metronic/dist/demo4/assets/vendors/custom/flot/flot.bundle.js" type="text/javascript"></script>
+<script src="/js/prepare.js" type="text/javascript"></script>
+<!--end::Page Snippets -->
+</body>
+<!-- end::Body -->
+</html>
